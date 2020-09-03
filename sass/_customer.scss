@@ -1,0 +1,88 @@
+.customers-logo {
+  display: flex;
+  @media screen and(min-width:480px) {
+    flex-wrap: wrap;
+  }
+  @media screen and(min-width:767px) {
+    flex-wrap: wrap;
+  }
+  @media screen and(min-width:1599px) {
+    margin-bottom: 0px;
+    margin-top: 50px;
+  }
+}
+
+.customers-link {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  @media screen and(max-width:767px) {
+    width: 210px;
+    height: 90px;
+  }
+  @media screen and(min-width:768px) {
+    width: 226px;
+    height: 90px;
+  }
+  @media screen and(min-width:1140px) {
+    width: 170px;
+    height: 90px;
+  }
+
+  // fill: #afb1b8;
+
+  // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // &:hover,
+  // &:focus {
+  //   fill: $accent-color;
+  }
+}
+
+.customer-logo-pic {
+  @media screen and(max-width:767px) {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  @media screen and(min-width:768px) {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  @media screen and(min-width:1140px) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  // border: 1px solid #afb1b8;
+  // box-sizing: border-box;
+  // border-radius: 4px;
+
+  // transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // &:focus,
+  // &:hover {
+  //   border: 1px solid $accent-color;
+  // }
+}
+
+.customer-logo-pic + .customer-logo-pic {
+  @media screen and(max-width:767px) {
+    margin-left: 10px;
+  }
+  @media screen and(min-width:768px) {
+    margin-left: 20px;
+  }
+  @media screen and(min-width:1140px) {
+    margin-left: 30px;
+  }
+}
+/* -------Loyal custumers title---------*/
+.customers .title {
+  @media screen and(max-width:767px) {
+  }
+  @media screen and(min-width:768px) {
+  }
+  @media screen and(min-width:1140px) {
+    margin-bottom: 0px;
+    margin-top: 94px;
+  }
+}

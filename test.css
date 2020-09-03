@@ -1,0 +1,62 @@
+/* Конопка с меняющейся иконской */
+
+.btn {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  width: 200px;
+  height: 50px;
+  margin-top: 50px;
+  background-color: greenyellow;
+  color: #ec0f0f;
+  transition: background-color 350ms linear 350ms;
+  transition: color 350ms linear 350ms;
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  background-image: url(./images/close.svg);
+  background-size: contain;
+  transition: transform 250ms linear;
+}
+
+.btn:hover {
+  background-color: rebeccapurple;
+  color: greenyellow;
+}
+
+.btn:hover::after {
+  transform: translateY(40px);
+}
+
+.btn::before {
+  content: "";
+  display: inline-block;
+
+  position: absolute;
+
+  top: 50%;
+  left: 124px;
+  transform: translateY(calc(50% - 50px));
+
+  width: 15px;
+  height: 15px;
+  background-image: url(./images/envelope.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  transition: transform 250ms linear;
+}
+
+.btn:hover::before {
+  transform: translateY(-50%);
+}
+
+/* .........................Конопка с меняющейся иконской .....................*/

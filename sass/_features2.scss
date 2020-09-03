@@ -1,0 +1,54 @@
+// -------TITLE IS NOT VIVIBLE----
+.features .title {
+  display: none;
+}
+
+.features-list {
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and(min-width:1140px) {
+    flex-wrap: nowrap;
+  }
+}
+// -------BACKGROUND OF ICONS--------------
+.features-icon-bcg {
+  text-align: center;
+  padding: 25px 0;
+  background-color: $bcg-alternativecolor;
+  @media screen and(min-width:768px) {
+  }
+}
+.list .item {
+  @media screen and(min-width:768px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  @media screen and(min-width:1140px) {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
+}
+// ---------ICON SIZE-----
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
+// ---------FETURES TITLE-------------
+.features-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+// -------FEATURES TEXT----------
+.features-text {
+  color: $secondary-textcolor;
+
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
