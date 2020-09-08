@@ -10,23 +10,35 @@
   background-color: #2f303a;
 }
 .footer-container {
-  width: 470px;
   padding: 60px 0px;
+
   margin-left: auto;
   margin-right: auto;
-
+  max-width: 480px;
+  @media screen and(max-width:768px) {
+    margin-top: 60px;
+  }
   @media screen and(min-width:768px) {
     display: flex;
-    width: 768px;
+    flex-wrap: wrap;
+    max-width: 768px;
   }
   @media screen and(min-width:1140px) {
-    width: 768px;
+    flex-wrap: nowrap;
+    max-width: 1200px;
   }
 }
 .logo-footer {
   text-align: center;
+  @media screen and(max-width:768px) {
+    margin-bottom: 60px;
+  }
   @media screen and(min-width:768px) {
     width: 50%;
+  }
+  @media screen and(min-width:1140px) {
+    width: 231px;
+    margin-right: 69px;
   }
 }
 
@@ -35,16 +47,22 @@
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  margin-top: 20px;
+
   font-style: normal;
 
   color: $alternative-textcolor;
+
+  display: inline-block;
+  margin-bottom: 8px;
 }
 // ----MAIL AND TELEPHONE N DECORATIO----
 .adress {
   color: $secondary-textcolor;
 
   font-style: normal;
+
+  display: inline-block;
+  margin-bottom: 8px;
 }
 
 // -----SUBSCRIBE CONTAINER POSITIONING-----
@@ -52,6 +70,12 @@
   &-container {
     @media screen and(min-width:768px) {
       width: 50%;
+    }
+    @media screen and(max-width:768px) {
+    }
+    @media screen and(min-width:1140px) {
+      width: 206px;
+      margin-right: 94px;
     }
   }
   &-title {
@@ -71,8 +95,12 @@
 .footer-icon-size {
   width: 160px;
   height: 30px;
+
+  margin-bottom: 20px;
 }
+
 // --------FOOOTER SOCIAL LINK POSITIONING AND DECOR-------------------
+
 .footer-social {
   display: flex;
   justify-content: center;
@@ -99,27 +127,41 @@
 
 // ----FOOOTER FORM-----
 .suscribe-form {
-  padding: 0px 15px 0px 15px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  @media screen and(min-width:768px) {
-    width: 450px;
+  display: block;
+  text-align: center;
+
+  max-width: 450px;
+
+  @media screen and(max-width:1140px) {
+    padding: 60px 15px 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and(min-width:1140px) {
+    width: 570px;
+    display: flex;
+    flex-direction: row;
+
+    align-items: baseline;
   }
 }
 .mail-subscribe {
-  width: 100%;
+  @media screen and(max-width:1140px) {
+    width: 100%;
+  }
 }
 .footer-field {
   display: flex;
   flex-direction: column-reverse;
   text-align: center;
 }
-.suscribe-form {
-  display: block;
-  text-align: center;
-}
+
 .footer-field input {
+  @media screen and(min-width:1140px) {
+    width: 358px;
+    margin-right: 12px;
+  }
+  padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -135,6 +177,9 @@
   text-transform: uppercase;
   color: $alternative-textcolor;
 }
+.mailing {
+  margin-bottom: 20px;
+}
 // ------subscribe button footer------
 .footer-btn {
   display: inline-flex;
@@ -144,9 +189,7 @@
   padding: 10px 32px;
 
   height: 50px;
-  min-width: 200px;
-
-  margin-left: 12px;
+  min-width: 220px;
 
   color: $alternative-textcolor;
   background: $accent-color;
@@ -157,6 +200,12 @@
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
+
+  @media screen and(max-width:1140px) {
+    margin-top: 20px;
+  }
+  @media screen and(min-width:1140px) {
+  }
 }
 
 .footer-btn::after {
