@@ -1,5 +1,6 @@
 // -------------------BACKDROP AKA BCG-----------------
 .backdrop {
+  z-index: 8;
   position: fixed;
 
   top: 0;
@@ -23,9 +24,7 @@
 }
 // -----------------MODAL WINDOW ITSELF-----------------------
 .modal {
-  @media screen and (min-width: 768px) {
-    width: 450px;
-  }
+  z-index: 66;
   position: absolute;
   top: 50%;
   left: 50%;

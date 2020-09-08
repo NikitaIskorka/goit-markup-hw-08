@@ -85,7 +85,7 @@
 
 // --------MENU CONTAINER----------
 .menu-container {
-  z-index: 9999;
+  z-index: 7;
   @media screen and(max-width: 767px) {
     display: none;
     position: absolute;
