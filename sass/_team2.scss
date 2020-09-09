@@ -40,6 +40,11 @@
     margin: 15px;
   }
 }
+.team-img {
+  @media screen and(max-width:1140px) {
+    width: 100%;
+  }
+}
 /* ------------teammates names -------------  */
 .team-name {
   font-weight: 500;
