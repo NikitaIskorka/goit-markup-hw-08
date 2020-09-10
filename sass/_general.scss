@@ -2,9 +2,6 @@
   font-family: "Roboto", sans-serif;
   color: $primary-textcolor;
   background-color: $bcg-color;
-  @media screen and(max-width:767px) {
-    min-width: 480px;
-  }
 }
 
 a {

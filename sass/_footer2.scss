@@ -16,7 +16,7 @@
 
   margin-left: auto;
   margin-right: auto;
-  min-width: 480px;
+  width: 100%;
   @media screen and(max-width:768px) {
     margin-top: 60px;
   }
@@ -132,7 +132,7 @@
   display: block;
   text-align: center;
 
-  min-width: 450px;
+  width: 100%;
 
   @media screen and(max-width:1140px) {
     padding: 60px 15px 0px 15px;
