@@ -11,11 +11,13 @@
     ),
     url(../images/Header-mob@2x.jpg);
   height: 600px;
+  min-width: 480px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
   background-color: #212121;
+
   @media screen and(min-width:768px) {
     background-image: linear-gradient(
         to right,
