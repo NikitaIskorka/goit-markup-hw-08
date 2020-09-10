@@ -1194,6 +1194,12 @@ header {
   color: #757575;
 }
 
+.portfolio-img-size {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
 .backdrop {
   z-index: 8;
   position: fixed;
