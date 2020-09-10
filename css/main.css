@@ -857,12 +857,6 @@ header {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .mail-subscribe {
-    min-width: 480px;
-  }
-}
-
 @media screen and (max-width: 1140px) {
   .mail-subscribe {
     width: 100%;
