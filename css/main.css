@@ -388,10 +388,6 @@ header {
   fill: #2196f3;
 }
 
-.phonenumber-text {
-  margin-left: 8px;
-}
-
 .features .title {
   display: none;
 }
@@ -719,12 +715,6 @@ header {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .footer-container {
-    margin-top: 60px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .footer-container {
     display: -webkit-box;
@@ -1023,26 +1013,24 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  padding-top: 60px;
   margin-left: 15px;
 }
 
 @media screen and (max-width: 767px) {
   .filter {
+    max-width: 500px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: 35px;
   }
 }
 
 @media screen and (min-width: 1140px) {
   .filter {
-    margin-top: 90px;
-    margin-bottom: 50px;
+    padding-top: 90px;
   }
 }
 
@@ -1079,6 +1067,14 @@ header {
   margin-right: 0;
 }
 
+.filter-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 @media screen and (min-width: 768px) {
   .portfolio {
     display: -webkit-box;
@@ -1099,7 +1095,7 @@ header {
 }
 
 .portfolio-item:last-child {
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
