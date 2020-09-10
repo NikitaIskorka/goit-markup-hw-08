@@ -389,6 +389,10 @@ header {
   fill: #2196f3;
 }
 
+.hero-btn {
+  margin-top: 30px;
+}
+
 .features .title {
   display: none;
 }
