@@ -73,12 +73,29 @@ img {
   border: 1px solid transparent;
 }
 
+.button:hover, .button:focus {
+  color: #2196f3;
+  background: #ffffff;
+}
+
 .title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1140px) {
+  .title {
+    margin: 0 0 30px 0;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .title {
+    margin: 0 0 50px 0;
+  }
 }
 
 .no-margin {
@@ -571,7 +588,7 @@ header {
 
 @media screen and (max-width: 768px) {
   .team-content {
-    padding: 60px 0;
+    padding: 0;
   }
 }
 
@@ -606,6 +623,12 @@ header {
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .team-item {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -646,8 +669,8 @@ header {
 }
 
 .social {
-  margin-top: 16px;
-  margin-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -690,7 +713,7 @@ header {
 }
 
 .footer-container {
-  padding: 60px 0px;
+  padding: 60px 15px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -710,6 +733,7 @@ header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     max-width: 768px;
+    padding: 60px 0;
   }
 }
 
@@ -972,12 +996,19 @@ header {
 
 .hero-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 42px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1140px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 60px;
+  }
 }
 
 .cotainer-hero {
